@@ -1,0 +1,30 @@
+ul>li {
+  list-style: none;
+}
+
+.person-node {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: #EEF3F6;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: 1px solid #73A1BF;
+  border-radius: 4px;
+  line-height: 1.42857143;
+  cursor: pointer;
+}
+
+.person-node__active {
+  border-width: 2px;
+  border-color: #395060;
+}
+
+.fold {
+  position: absolute;
+  line-height: 1.42857143;
+  margin-left: -18px;
+}
+
+.edit-box {
+  display: inline-block;
+}

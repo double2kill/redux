@@ -1,13 +1,16 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
-import family from './reducers/person'
+import reducers from './reducers'
 import Person from './component/person'
 
 function Index () {
   return (
-    <Provider store={createStore(family)}>
-      <Person myId={0}/>
+    <Provider store={createStore(reducers)}>
+      <ul>
+        <p>点击"姓氏"进行添加</p>
+        <Person myId={0}/>
+      </ul>
     </Provider>
   )
 }
